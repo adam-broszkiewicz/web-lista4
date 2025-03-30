@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Jan Kowalski</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand mt-2 mt-lg-0" href="/">
+              <img
+                src="img/logo.png"
+                height="30"
+                alt="Jan Kowalski"
+                loading="lazy" />
+              <span class="ms-2 fw-bold">Jan Kowalski</span>
+            </a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">O mnie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Projekty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container mt-5">
+        <h2>O mnie</h2>
+        <div class="row">
+          <div class="col-xl-3">
+            <p class="mt-4 fs-5">
+              Nazywam się
+              <span class="fw-bold text-decoration-underline"
+                >Jan Kowalski</span
+              >
+              i jestem frontend developerem. Specjalizuję się w React,
+              TypeScript i Tailwind CSS, tworząc nowoczesne, szybkie i
+              responsywne interfejsy użytkownika. Zależy mi na wydajności i
+              dobrej UX, dlatego zawsze szukam najlepszych rozwiązań. Śledzę
+              nowinki technologiczne i chętnie eksperymentuję z nowymi
+              narzędziami.
+            </p>
+          </div>
+          <div class="col-xl-9">
+            <img class="img-fluid" src="img/jan-kowalski.jpg" />
+          </div>
+        </div>
+      </section>
+      <section class="container mt-5">
+        <h2 class="mb-4">Moja filozofia</h2>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>
+              Good design is not just about making things look pretty; it's
+              about making things work beautifully.
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            <span class="fw-bold">Jeffrey Zeldman</span>, web designer i autor
+          </figcaption>
+        </figure>
+        <p class="fs-5">
+          Moja filozofia designu i kodowania opiera się na prostocie i
+          funkcjonalności. Staram się, aby każda aplikacja była nie tylko
+          estetyczna, ale przede wszystkim intuicyjna i łatwa w obsłudze. W
+          kodzie dążę do przejrzystości i modularności, aby każdy element był
+          łatwy do zrozumienia i utrzymania. Uważam, że dobra architektura kodu
+          i odpowiednie podziały komponentów to klucz do skalowalności i
+          efektywności. Zawsze staram się pisać kod, który jest łatwy do
+          testowania i rozwoju w przyszłości, dbając o jego jakość od początku
+          do końca.
+        </p>
+      </section>
+      <section class="container mt-5">
+        <h2 class="mb-4">Moje projekty</h2>
+        <p>
+          Przeczytaj więcej o moich projektach
+          <a class="" href="/projects.html">tutaj</a>.
+        </p>
+        <p>
+          Poniższy wykres przedstawia procentowy udział danych typów projektów w
+          mojej pracy:
+        </p>
+        <div class="d-flex justify-content-center">
+          <div class="w-50"><canvas id="project-types"></canvas></div>
+        </div>
+        <p class="mt-4">Wszystkie moje projekty:</p>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center">
+          <div
+            id="project-carousel"
+            class="carousel slide carousel-fade carousel-dark"
+            data-mdb-ride="carousel"
+            data-mdb-carousel-init>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-mdb-target="#project-carousel"
+                data-mdb-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="News Story"></button>
+              <button
+                type="button"
+                data-mdb-target="#project-carousel"
+                data-mdb-slide-to="1"
+                aria-label="StockMaster"></button>
+              <button
+                type="button"
+                data-mdb-target="#project-carousel"
+                data-mdb-slide-to="2"
+                aria-label="MebleDesign"></button>
+              <button
+                type="button"
+                data-mdb-target="#project-carousel"
+                data-mdb-slide-to="3"
+                aria-label="FlexCMS"></button>
+              <button
+                type="button"
+                data-mdb-target="#project-carousel"
+                data-mdb-slide-to="4"
+                aria-label="PhotoEditPro"></button>
+              <button
+                type="button"
+                data-mdb-target="#project-carousel"
+                data-mdb-slide-to="5"
+                aria-label="SmakoweInspiracje"></button>
+            </div>
+            <div class="carousel-inner">
+              <div
+                class="carousel-item d-flex justify-content-center align-items-center active">
+                <div class="card card-min-height w-50">
+                  <div class="card-header">
+                    <span class="fs-2 fw-bold">News Story</span>
+                  </div>
+                  <div class="card-body mb-5">
+                    <div
+                      class="bg-image hover-overlay"
+                      data-mdb-ripple-init
+                      data-mdb-ripple-color="light">
+                      <img src="img/projects/website1.jpg" class="img-fluid" />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: hsla(0, 0%, 0%, 0.15)"></div>
+                      </a>
+                    </div>
+                    <p class="card-text mt-3">
+                      Portal z najnowszymi informacjami z kraju i świata,
+                      aktualizowany w czasie rzeczywistym. Znajdziesz tu
+                      wiadomości polityczne, sportowe, biznesowe i
+                      technologiczne.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-item d-flex justify-content-center align-items-center">
+                <div class="card card-min-height w-50">
+                  <div class="card-header">
+                    <span class="fs-2 fw-bold">StockMaster</span>
+                  </div>
+                  <div class="card-body mb-5">
+                    <div
+                      class="bg-image hover-overlay"
+                      data-mdb-ripple-init
+                      data-mdb-ripple-color="light">
+                      <img src="img/projects/website2.jpg" class="img-fluid" />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: hsla(0, 0%, 0%, 0.15)"></div>
+                      </a>
+                    </div>
+                    <p class="card-text mt-3">
+                      Platforma do symulacji inwestycji giełdowych i analizy
+                      rynkowej. Umożliwia śledzenie notowań, analizę trendów i
+                      handel wirtualnymi aktywami.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-item d-flex justify-content-center align-items-center">
+                <div class="card card-min-height w-50">
+                  <div class="card-header">
+                    <span class="fs-2 fw-bold">MebleDesign</span>
+                  </div>
+                  <div class="card-body mb-5">
+                    <div
+                      class="bg-image hover-overlay"
+                      data-mdb-ripple-init
+                      data-mdb-ripple-color="light">
+                      <img src="img/projects/website3.jpg" class="img-fluid" />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: hsla(0, 0%, 0%, 0.15)"></div>
+                      </a>
+                    </div>
+                    <p class="card-text mt-3">
+                      Sklep internetowy oferujący szeroki wybór mebli do domu i
+                      biura. Intuicyjna wyszukiwarka i konfigurator pomagają
+                      dopasować produkty do wnętrza.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-item d-flex justify-content-center align-items-center">
+                <div class="card card-min-height w-50">
+                  <div class="card-header">
+                    <span class="fs-2 fw-bold">FlexCMS</span>
+                  </div>
+                  <div class="card-body mb-5">
+                    <div
+                      class="bg-image hover-overlay"
+                      data-mdb-ripple-init
+                      data-mdb-ripple-color="light">
+                      <img src="img/projects/website4.jpg" class="img-fluid" />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: hsla(0, 0%, 0%, 0.15)"></div>
+                      </a>
+                    </div>
+                    <p class="card-text mt-3">
+                      Nowoczesny system zarządzania treścią (CMS) umożliwiający
+                      tworzenie stron internetowych bez kodowania. Obsługuje
+                      szablony, wtyczki i SEO.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-item d-flex justify-content-center align-items-center">
+                <div class="card card-min-height w-50">
+                  <div class="card-header">
+                    <span class="fs-2 fw-bold">PhotoEditPro</span>
+                  </div>
+                  <div class="card-body mb-5">
+                    <div
+                      class="bg-image hover-overlay"
+                      data-mdb-ripple-init
+                      data-mdb-ripple-color="light">
+                      <img src="img/projects/website5.jpg" class="img-fluid" />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: hsla(0, 0%, 0%, 0.15)"></div>
+                      </a>
+                    </div>
+                    <p class="card-text mt-3">
+                      Zaawansowany edytor zdjęć online z filtrami, retuszem i
+                      obsługą warstw. Możliwość eksportu w różnych formatach i
+                      integracja z chmurą.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-item d-flex justify-content-center align-items-center">
+                <div class="card card-min-height w-50">
+                  <div class="card-header">
+                    <span class="fs-2 fw-bold">SmakoweInspiracje</span>
+                  </div>
+                  <div class="card-body mb-5">
+                    <div
+                      class="bg-image hover-overlay"
+                      data-mdb-ripple-init
+                      data-mdb-ripple-color="light">
+                      <img src="img/projects/website6.jpg" class="img-fluid" />
+                      <a href="#!">
+                        <div
+                          class="mask"
+                          style="background-color: hsla(0, 0%, 0%, 0.15)"></div>
+                      </a>
+                    </div>
+                    <p class="card-text mt-3">
+                      Serwis kulinarny z tysiącami przepisów, poradami
+                      kucharskimi i filmami instruktażowymi. Możesz tworzyć
+                      własne książki kucharskie online.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-mdb-target="#project-carousel"
+              data-mdb-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Poprzedni</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-mdb-target="#project-carousel"
+              data-mdb-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Następny</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <h2>FAQ</h2>
+        <div class="mt-4 accordion" id="faq-accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-question-offers">
+              <button
+                data-mdb-collapse-init
+                class="accordion-button"
+                type="button"
+                data-mdb-target="#collapse-faq-question-offers"
+                aria-expanded="true"
+                aria-controls="collapse-faq-question-offers">
+                <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>Czy
+                przyjmuję propozycje współpracy?
+              </button>
+            </h2>
+            <div
+              id="collapse-faq-question-offers"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faq-question-offers"
+              data-mdb-parent="#faq-accordion">
+              <div class="accordion-body">
+                <strong>Tak!</strong> Jeśli chcesz zostawić mi propozycję
+                współpracy, przejdź do sekcji
+                <a href="/contact.html">Kontakt</a>. Przyjmuję wszelkie
+                propozycje związane z aplikacjami internetowymi.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-questions-technologies">
+              <button
+                data-mdb-collapse-init
+                class="accordion-button"
+                type="button"
+                data-mdb-target="#collapse-faq-questions-technologies"
+                aria-expanded="true"
+                aria-controls="collapse-faq-questions-technologies">
+                <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i
+                >Jakie technologie najczęściej wykorzystuję?
+              </button>
+            </h2>
+            <div
+              id="collapse-faq-questions-technologies"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-questions-technologies"
+              data-mdb-parent="#faq-accordion">
+              <div class="accordion-body">
+                Najczęściej pracuję z React, TypeScript, Tailwind CSS i Next.js,
+                ale mam też doświadczenie z innymi frameworkami, jak Vue.js czy
+                Svelte.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-questions-backend">
+              <button
+                data-mdb-collapse-init
+                class="accordion-button"
+                type="button"
+                data-mdb-target="#collapse-faq-questions-backend"
+                aria-expanded="true"
+                aria-controls="collapse-faq-questions-backend">
+                <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>Czy
+                masz doświadczenie w pracy z backendem?
+              </button>
+            </h2>
+            <div
+              id="collapse-faq-questions-backend"
+              class="accordion-collapse collapse"
+              aria-labelledby="faq-questions-backend"
+              data-mdb-parent="#faq-accordion">
+              <div class="accordion-body">
+                Tak, potrafię pracować z Node.js, Express i Firebase. Rozumiem
+                podstawy baz danych i API, co pomaga mi lepiej współpracować z
+                backendem.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <script type="text/javascript" src="js/chart.umd.js"></script>
+    <script src="js/about.js"></script>
+  </body>
+</html>

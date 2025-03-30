@@ -1,0 +1,9 @@
+.form-required > .form-label::before,
+.form-check-label::before {
+  content: "* ";
+  color: #dc4c64;
+}
+
+.card-min-height {
+  height: 43rem;
+}

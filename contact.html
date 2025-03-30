@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Jan Kowalski</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand mt-2 mt-lg-0" href="/">
+              <img
+                src="img/logo.png"
+                height="30"
+                alt="Jan Kowalski"
+                loading="lazy" />
+              <span class="ms-2 fw-bold">Jan Kowalski</span>
+            </a>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">O mnie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Projekty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mb-5">
+      <div class="row">
+        <div
+          class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
+          <h2 class="mt-5">Formularz kontaktowy</h2>
+          <form class="mt-3">
+            <div class="mb-4">
+              <label for="message-type-input">Typ wiadomości</label>
+              <select
+                id="message-type-input"
+                class="form-select"
+                data-mdb-select-init>
+                <option value="job-offer">Propozycja współpracy</option>
+                <option value="other">Inny</option>
+              </select>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4 form-required">
+              <input
+                id="name-input"
+                class="form-control"
+                type="text"
+                required />
+              <label class="form-label" for="name-input">Imię</label>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input id="email-input" class="form-control" type="email" />
+              <label class="form-label" for="email-input">Adres email</label>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4 form-required">
+              <textarea
+                id="message-input"
+                class="form-control"
+                rows="6"
+                required></textarea>
+              <label class="form-label" for="message-input">Wiadomość</label>
+            </div>
+
+            <div class="mb-5">
+              <label for="attachments-input" class="form-label"
+                >Załączniki</label
+              >
+              <input
+                class="form-control"
+                type="file"
+                id="attachments-input"
+                multiple />
+            </div>
+
+            <div
+              class="form-check d-flex justify-content-center mb-4 form-required">
+              <input
+                id="agree-to-response-input"
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                required />
+              <label class="form-check-label" for="agree-to-response-input">
+                Wyrażam zgodę na otrzymanie odpowiedzi na podany adres e-mail.
+              </label>
+            </div>
+
+            <button
+              data-mdb-ripple-init
+              type="submit"
+              class="btn btn-primary btn-block">
+              Wyślij
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-6 col-12">
+          <div class="my-5 p-3 card">
+            <div class="card-body">
+              <h5 class="card-title">Moja lokalizacja</h5>
+            </div>
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.920119305762!2d17.054467812807758!3d51.109933971607745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9d547361e17%3A0x161523037438268b!2sD-2%2C%20plac%20Grunwaldzki%209%2C%2050-384%20Wroc%C5%82aw!5e0!3m2!1sen!2spl!4v1743331741058!5m2!1sen!2spl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+  </body>
+</html>
